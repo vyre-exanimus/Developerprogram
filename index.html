@@ -9,8 +9,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0b1220;
-    color: #e2e8f0;
+    background: #ffffff;
+    color: #111827;
 }
 
 /* HEADER */
@@ -18,9 +18,8 @@ header {
     background: linear-gradient(135deg, #22c55e, #16a34a);
     padding: 40px 20px;
     text-align: center;
+    color: white;
 }
-header h1 { margin: 0; font-size: 30px; }
-header p { margin-top: 10px; opacity: 0.9; }
 
 /* CONTAINER */
 .container {
@@ -29,83 +28,68 @@ header p { margin-top: 10px; opacity: 0.9; }
     padding: 20px;
 }
 
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-}
-
 /* CARD */
 .card {
-    background: #1e293b;
+    background: #f9fafb;
     padding: 15px;
     border-radius: 14px;
     transition: 0.3s;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.3);
-}
-.card:hover { transform: translateY(-6px); }
-
-.card h3 {
-    margin-top: 0;
-    color: #22c55e;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    color: #111827;
 }
 
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* STEP */
 .step {
-    background: #0b1220;
+    background: #ffffff;
     padding: 10px;
     margin: 8px 0;
     border-left: 4px solid #22c55e;
     border-radius: 6px;
     font-size: 14px;
+    color: #111827;
 }
 
-/* NEW SECTIONS */
+/* SECTION */
 .section {
     margin-top: 40px;
     padding: 20px;
-    background: #111827;
+    background: #f3f4f6;
     border-radius: 14px;
+    color: #111827;
 }
 
-.section h2 {
-    color: #22c55e;
-}
-
-/* FLOW DIAGRAM STYLE */
-.flow {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
+/* FLOW */
 .flow div {
     flex: 1;
     min-width: 180px;
-    background: #1e293b;
+    background: #f9fafb;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    color: #111827;
 }
 
 /* FAQ */
-.faq {
-    margin-top: 10px;
-}
 .faq-item {
-    background: #1e293b;
+    background: #f9fafb;
     margin: 8px 0;
     padding: 12px;
     border-radius: 10px;
+    color: #111827;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    opacity: 0.7;
+    opacity: 0.8;
     font-size: 14px;
     margin-top: 30px;
+    color: #111827;
 }
 </style>
 
