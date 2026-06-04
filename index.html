@@ -1,1009 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sam12 Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kimyo Academy Bot - To‘liq Qo‘llanma</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1220;
+    color: #e2e8f0;
+}
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="style.css">
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    padding: 40px 20px;
+    text-align: center;
+}
+header h1 { margin: 0; font-size: 30px; }
+header p { margin-top: 10px; opacity: 0.9; }
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 14px;
+    transition: 0.3s;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+}
+.card:hover { transform: translateY(-6px); }
+
+.card h3 {
+    margin-top: 0;
+    color: #22c55e;
+}
+
+.step {
+    background: #0b1220;
+    padding: 10px;
+    margin: 8px 0;
+    border-left: 4px solid #22c55e;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* NEW SECTIONS */
+.section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #111827;
+    border-radius: 14px;
+}
+
+.section h2 {
+    color: #22c55e;
+}
+
+/* FLOW DIAGRAM STYLE */
+.flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flow div {
+    flex: 1;
+    min-width: 180px;
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FAQ */
+.faq {
+    margin-top: 10px;
+}
+.faq-item {
+    background: #1e293b;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+    font-size: 14px;
+    margin-top: 30px;
+}
+</style>
+
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="rasm/photo_2023-03-22_11-27-03.jpg" alt="" width="80" style="border-radius: 10px;">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Samuel_12turkiy">Samuel_12turkiy</h1>
-
-          <p class="title">Web developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:isroilarslonov5@gmail.com" class="contact-link">isroilarslonov5@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+998950970120" class="contact-link">+998950970120</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">29.11.2001</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Uzbekistan Republic,Kashkadarya region, VenaSoft company.</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <a href="https://www.facebook.com/isroil.arslonov.5/"><ion-icon name="logo-facebook"></ion-icon></a>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <a href="https://www.instagram.com/samuell_12turkiy/"><ion-icon name="logo-instagram"></ion-icon></a>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-         
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I work in design and web development at VenaSoft company of the Republic of Uzbekistan. 
-            Nowadays, I enjoy my work of turning complex problems into simple, beautiful and intuitive designs.</p>
-
-          <p>
-            My job is to make your website functional and user-friendly, but at the same time attractive.
-            I also make sure your product is eye-catching and easy to use.
-            My goal is to convey your message and personality in the most creative way possible.
-            I have created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <!--<section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <a>rasmi joylanadi</a>
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title"></h4>
-
-                <p class="service-item-text">
-                  
-                </p>
-              </div>
-
-            </li>--> 
-
-            <li class="service-item" style="position: absolute;top: 400px;">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item" style="position: absolute;top: 600px;">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  Ensuring the security of sites and work on inspection.
-                </p>
-              </div>
-
-            </li>
-
-            
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title"></h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>-->
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">VenaSoft education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Kashkadarya Professional Academy</h4>
-
-              <span>2018-2023 year</span>
-
-              <p class="timeline-text">
-                web developer, web design, i.e. frontend and backend developers.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Chief employee of this academy:</h4>
-
-              <span>Name:Sardor Kxaydarov</span>
-
-              <p class="timeline-text">
-                Worked at AmayaSoft company. 
-                many a profissional web developer who has worked on projects 
-                and released many developers
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">One of the students of this academy:</h4>
-
-              <span>Name:Samuell_12turkiy</span>
-
-              <p class="timeline-text">
-                Samuel_12-began to study computer literacy at the IT center of Yanyi city, Turki-Syr Darya region, and then
-                In February 2023, he started studying at the VenaSoft training center.
-              </p>
-
-            </li>
-
-          </ol>
-
-          
-
-        </section>
-
-        <section class="timeline">
-
-          
-        </section>
-
-        <section class="skill">
-
-          <!--<h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">-->
-
-            <div class="box"style="position: absolute;left: 50px;">
-              <div class="circle" data-dots="100" data-percent="85" style="--bgColor: #ff0070"></div>
-              <div class="text">
-                <h2>85%</h2>
-                <small>HTML</small>
-              </div>
-            </div>
-            <div class="box" style="position: absolute;left: 350px;">
-              <div class="circle" data-dots="100" data-percent="50" style="--bgColor: #0f0"></div>
-              <div class="text">
-                <h2>50%</h2>
-                <small>JavaScript</small>
-              </div>
-            </div>
-            <div class="box" style="position: absolute;left: 650px;">
-              <div class="circle" data-dots="100" data-percent="40" style="--bgColor: #52a8ff"></div>
-              <div class="text">
-                <h2>40%</h2>
-                <small>java</small>
-              </div>
-            </div>  
-
-          <!--</ul>-->
-
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox">
-          
-          <a href="https://yandex.uz/maps/10331/karshi/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Карши</a>
-          <a href="https://yandex.uz/maps/10331/karshi/search/paxtaozr%2015%20maktab/?from=tabbar&ll=65.737022%2C38.834139&sll=65.795958%2C38.843132&source=serp_navig&sspn=0.344696%2C0.166467&utm_medium=mapframe&utm_source=maps&z=12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Paxtaozr 15 maktab — ЯндексКарты</a>
-          <iframe src="https://yandex.uz/map-widget/v1/?from=tabbar&ll=65.737022%2C38.834139&mode=search&sll=65.795958%2C38.843132&source=serp_navig&sspn=0.344696%2C0.166467&text=paxtaozr%2015%20maktab&z=12" width="560" height="1200px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-        
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+<header>
+    <h1>📚 Kimyo Academy Telegram Bot</h1>
+    <p>To‘liq LMS tizim: O‘quvchi + Admin + Test + Video + PDF</p>
+</header>
+
+<div class="container">
+
+<!-- MAIN GRID -->
+<div class="grid">
+
+    <div class="card">
+        <h3>1. Ro‘yxatdan o‘tish</h3>
+        <div class="step">Ism, telefon, email</div>
+        <div class="step">Viloyat / shahar tanlash</div>
+        <div class="step">Rasm (Face ID optional)</div>
+        <div class="step">Profil yaratish</div>
     </div>
 
-  </main>
+    <div class="card">
+        <h3>2. Asosiy menyu</h3>
+        <div class="step">📘 Darsliklar</div>
+        <div class="step">🎥 Video darslar</div>
+        <div class="step">🧪 Testlar</div>
+        <div class="step">🏆 Reyting</div>
+    </div>
 
+    <div class="card">
+        <h3>3. Test tizimi</h3>
+        <div class="step">A/B/C/D variantlar</div>
+        <div class="step">Timer (1–30 min)</div>
+        <div class="step">Natija avtomatik</div>
+        <div class="step">PDF analiz</div>
+    </div>
 
+    <div class="card">
+        <h3>4. Admin panel</h3>
+        <div class="step">PDF upload</div>
+        <div class="step">Video yuklash</div>
+        <div class="step">Test generator</div>
+        <div class="step">User monitoring</div>
+    </div>
 
+</div>
 
+<!-- SYSTEM ARCHITECTURE -->
+<div class="section">
+    <h2>⚙️ Tizim Arxitekturasi</h2>
+    <div class="flow">
+        <div>Telegram Bot (User)</div>
+        <div>FastAPI Backend</div>
+        <div>SQLite / PostgreSQL</div>
+        <div>Admin Panel</div>
+        <div>File Storage (PDF/Video)</div>
+    </div>
+</div>
 
+<!-- USER FLOW -->
+<div class="section">
+    <h2>🔄 Foydalanuvchi Flow</h2>
+    <div class="flow">
+        <div>Start Bot</div>
+        <div>Register</div>
+        <div>Dashboard</div>
+        <div>Lesson / Video</div>
+        <div>Test yechish</div>
+        <div>Natija + Reyting</div>
+    </div>
+</div>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+<!-- FEATURES -->
+<div class="section">
+    <h2>🔥 Qo‘shimcha Funksiyalar</h2>
+    <div class="step">🔔 Push notification (Telegram message)</div>
+    <div class="step">📊 Statistik dashboard</div>
+    <div class="step">🤖 AI test generator (kelajakda)</div>
+    <div class="step">📱 Mobile-friendly web app</div>
+</div>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="script.js"></script>
+<!-- FAQ -->
+<div class="section">
+    <h2>❓ FAQ</h2>
+
+    <div class="faq">
+        <div class="faq-item">
+            <b>Bot internetsiz ishlaydimi?</b><br>
+            Yo‘q, serverga ulangan bo‘lishi kerak.
+        </div>
+
+        <div class="faq-item">
+            <b>Video qayerda saqlanadi?</b><br>
+            Server storage yoki cloud (AWS, VPS).
+        </div>
+
+        <div class="faq-item">
+            <b>Testlar avtomatik bo‘ladimi?</b><br>
+            Ha, backend orqali avtomatik tekshiriladi.
+        </div>
+    </div>
+</div>
+
+</div>
+
+<footer>
+    © 2026 Kimyo Academy Bot | LMS System | Made for Education
+</footer>
+
 </body>
-
 </html>
